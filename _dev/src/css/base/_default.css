@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+
+	font-size: 100%; 
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+
+	background: var(--body-bg);
+	height: 100%;
+
+	font-family: var(--font-family-base);
+	line-height: var(--line-height-base);
+	color: var(--text-color-base);
+
+    &.body--locked{
+        overflow: hidden;
+    }
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+	
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle; 
+}

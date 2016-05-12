@@ -1,0 +1,157 @@
+[type='text'], 
+[type='password'], 
+[type='date'], 
+[type='datetime'], 
+[type='datetime-local'], 
+[type='month'], 
+[type='week'], 
+[type='email'], 
+[type='number'], 
+[type='search'], 
+[type='tel'], 
+[type='time'], 
+[type='url'], 
+[type='color'],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none; 
+
+	transition: border-color 0.25s ease-in-out;
+
+	display: block;
+	width: 100%;
+	
+	padding: var(--input-padding-height) var(--input-padding-width);
+
+	border: var(--input-border);
+	background-color: var(--input-bg);
+	border-radius: 0px;
+
+	font-family: inherit;
+	font-size: inherit;
+	color: var(--input-color);
+
+	&:focus {
+		transition: border-color 0.25s ease-in-out;
+
+	    border: var(--input-border-focus);
+	    background-color: var(--input-bg-focus);
+	    outline: none;
+	}
+}
+
+	.input--qty{
+		width: 68px;
+		padding-right: 5px;
+		margin-right: 5px;
+	}
+	.input--coupon{
+		width: 50%;
+		margin-right: 5px;
+	}
+
+.inputGroup--inline *{
+	height: 40px;
+}
+
+.button--update{
+	width: 50px;
+}
+
+[type='checkbox'],
+[type='radio']{
+	&:focus{
+		outline: none;
+	}
+}
+
+select {
+	outline: none;
+}
+
+input,
+textarea{
+	&::-moz-placeholder {
+		color: var(--input-color-placeholder);
+		opacity: 1;
+  	}
+  	&:-ms-input-placeholder { 
+		color: var(--input-color-placeholder); 
+  	}
+  	&::-webkit-input-placeholder  { 
+		color: var(--input-color-placeholder); 
+  	}
+}
+
+textarea {
+	height: auto;
+	max-width: 100%;
+	min-height: 50px;
+	resize: vertical;
+}
+textarea[rows] {
+	height: auto; 
+}
+
+select {
+	width: 100%;
+}
+
+label{
+	display: block;
+	margin-bottom: 5px;
+
+	font-size: var(--fs13);
+}
+
+fieldset{
+	padding: 0;
+	border: 0;
+}
+
+
+	.formList-item{
+		margin-bottom: 20px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.formList-item--half{
+		width: 50%;
+	}
+
+	.formList-item--fieldset{
+		margin-top: 50px;
+	}
+
+
+.form--register{
+	margin-bottom: 50px;
+}
+
+.form--newsletter{
+	& [type='email']{
+		width: 70%;
+		margin-right: 10px;
+	}
+
+	& button {
+		background-color: var(--gray);
+
+		&:hover{
+			background-color: var(--brand-red);
+		}
+	}
+}
+
+.form--couponCode{
+	padding: 20px;
+
+	background-color: var(--gray-lightest);
+}
+
+.form--paymentMethod{
+	margin-bottom: 50px;
+}

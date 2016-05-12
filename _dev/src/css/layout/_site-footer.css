@@ -1,0 +1,28 @@
+.siteFooter{
+    padding: 35px 0;
+    height: var(--footer-height);
+
+    color: white;
+    font-size: var(--fs12);
+
+    & a{
+        color: black;
+    }
+
+    & p,
+    & li,
+    & address{
+        color: black;
+        font-size: inherit;
+    }
+
+    & p:last-child{
+        margin-bottom: 0;
+    }
+
+    & h4{
+        margin-bottom: 15px;
+
+        color: black;
+    }
+}

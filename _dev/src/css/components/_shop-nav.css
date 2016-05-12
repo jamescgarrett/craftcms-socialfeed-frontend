@@ -1,0 +1,25 @@
+.shop-nav{
+    margin-top: 35px;
+}
+ .shop-nav-item{
+    margin-bottom: 5px;
+
+    font-size: var(--fs13);
+    text-transform: lowercase;
+
+    & a{
+        display: inline-block;
+        padding: 8px 18px;
+
+        background-color: black;
+
+        color: white;
+
+        &:hover,
+        &.shop-nav-item--active{
+            background-color: var(--brand-cyan);
+
+            color: black;
+        }
+    }
+}

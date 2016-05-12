@@ -1,0 +1,36 @@
+table {
+	width: 100%;
+	margin-bottom: 1rem;
+	border-radius: 0px; 
+ }
+table thead,
+table tbody,
+table tfoot {
+	border: var(--table-border);
+	background-color: var(--table-bg); 
+}
+table thead th,
+table thead td,
+table tfoot th,
+table tfoot td {
+	padding: var(--table-head-foot-padding);
+
+	border: var(--table-border);
+
+	text-align: left;
+	text-transform: lowercase;
+}
+table tbody th,
+table tbody td {
+	padding: var(--table-padding);
+
+	border: var(--table-border);
+}
+table tbody tr:nth-child(even) {
+	background-color: var(--table-bg-even); 
+}
+
+
+	.tableList-item{
+		font-size: var(--fs14);
+	}

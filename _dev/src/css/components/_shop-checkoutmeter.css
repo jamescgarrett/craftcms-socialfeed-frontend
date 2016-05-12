@@ -1,0 +1,43 @@
+.shop-checkoutMeter{
+    position: relative;
+    height: 20px;
+    margin-bottom: 10px;
+
+    border: 1px solid var(--gray-lighter);
+
+    & > span{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        height: 20px;
+
+        background-color: var(--brand-cyan); 
+    }
+}
+
+.shop-checkoutMeter-steps-step{
+    display: block;
+    flex: 1;
+
+    color: black;
+    font-size: var(--fs13);
+    text-align: center;
+
+    & a{
+        color: black;
+    }
+
+    &.shop-checkoutMeter-steps-step--done{
+        opacity: .5;
+
+        color: black;
+
+        & a{
+            color: black;
+        }
+    }
+
+    &.shop-checkoutMeter-steps-step--sel{
+        opacity: 1;
+    }
+}

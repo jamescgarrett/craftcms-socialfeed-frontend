@@ -1,0 +1,129 @@
+.siteNav{
+    transition: width 0.4s cubic-bezier(0.000, 0.000, 0.000, 1.000);
+
+    position: fixed;
+    width: 0;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 10;
+
+    background-color: white;
+
+    &.siteNav--active{
+        width: 30vw;
+    }
+}
+
+.siteNav > ul {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.siteNav-item{
+    position: relative;
+    padding-right: 20px;
+
+    font-size: var(--fs18);
+    text-transform: lowercase;
+
+    & > a{
+        display: inline-block;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+
+        background-color: black;
+
+        color: white;
+
+        &:hover{
+            background-color: var(--brand-red);
+        }
+    }
+}
+
+.siteNav-navIcons{
+    height: 27px;
+
+    text-align: right;
+    user-select: none;
+}
+    .siteNav-navIcons-icon{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            color: var(--brand-cyan);
+        }
+    }
+
+    .siteNav-navIcons-icon{
+        color: black;
+        font-size: var(--fs18);
+        cursor: pointer;
+    }
+
+    .siteNav-navIcons-icon--hamburger{
+        transition: .5s ease-in-out;
+        transform: rotate(0deg);
+
+        position: relative;
+        width: 25px;
+        height: 18px;
+        overflow: hidden;
+
+        & span{
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+
+            background-color: black;
+            opacity: 1;
+
+            &:nth-child(1){
+                top: 0;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3){
+                top: 7px;
+            }
+
+            &:nth-child(4){
+                top: 14px;
+            }
+        }
+
+        &.siteNav--active{
+            & span{
+                &:nth-child(1){
+                    top: 7px;
+                    width: 0%;
+                    left: 50%;
+                }
+
+                &:nth-child(2){
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(3){
+                    transform: rotate(-45deg);
+                }
+
+                &:nth-child(4){
+                    top: 7px;
+                    width: 0%;
+                    left: 50%;
+                }
+            }
+        }
+    }

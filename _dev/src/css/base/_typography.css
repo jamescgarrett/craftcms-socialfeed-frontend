@@ -1,0 +1,180 @@
+/*
+ *  Typekit
+ */
+.wf-loading {
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6,
+	& p,
+	& li{
+		visibility: hidden;
+	}
+}
+.wf-active {
+	& h1,
+	& h2,
+	& h3,
+	& h4,
+	& h5,
+	& h6,
+	& p,
+	& li{
+		visibility: visible;
+	}
+}
+
+/*
+ *  Headings
+ */
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+h6{
+	margin-top: 0;
+	margin-bottom: var(--headings-margin-bottom);
+
+	font-family: var(--headings-font-family);
+	line-height: var(--headings-line-height);
+	text-rendering: optimizeLegibility;
+    letter-spacing: var(--headings-default-letter-spacing);
+}
+h1 {
+	font-size: var(--fs21);
+    font-weight: var(--headings-font-weight);
+    text-transform: lowercase;
+}
+
+h2 {
+	font-size: var(--fs21);
+    font-weight: var(--headings-font-weight);
+    text-transform: lowercase;
+}
+
+h3 {
+	margin-bottom: 20px;
+    font-size: var(--fs16);
+    font-weight: var(--headings-font-weight);
+    text-transform: lowercase;
+}
+
+h4 {
+	font-size: var(--fs14);
+    text-transform: uppercase; 
+}
+
+h5 {
+	font-size: var(--fs17); 
+}
+
+h6 {
+	 font-size: var(--fs16); 
+}
+
+.h2{
+	font-size: var(--fs21);
+}
+.h3{
+	margin-bottom: 20px;
+	
+	font-size: var(--fs16);
+}
+
+
+/*
+ *  Paragraph
+ *  Address
+ *  Stylers
+ */
+p {
+	font-size: var(--fs14);
+	line-height: var(--paragraph-line-height);
+    margin-top: var(--paragraph-margin-top);
+	margin-bottom: var(--paragraph-margin-bottom);
+	text-rendering: optimizeLegibility; 
+}
+
+b,
+strong{
+	font-weight: var(--font-weight-bold);
+}
+
+i, 
+em{
+	font-style: italic;
+}
+
+address{
+	font-size: inherit; 
+	line-height: var(--paragraph-line-height);
+	text-rendering: optimizeLegibility; 
+}
+
+
+/*
+ *  Link
+ */
+a {
+	outline: 0;
+	
+	color: var(--link-color-base);
+	text-decoration: var(--link-decoration-base);
+	line-height: inherit;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		color: var(--link-hover-color-base);
+		text-decoration: var(--link-hover-decoration-base);
+	}
+
+	img{
+		border: 0;
+	}
+}
+
+/*
+ *  List
+ */
+ul,
+ol,
+dl {
+	margin-bottom: 1rem;
+
+	list-style-position: outside;
+	line-height: var(--paragraph-line-height);
+
+	ul,
+	ol {
+		margin-bottom: 0;
+	}
+}
+li{
+	font-size: var(--fs14);
+}
+ul {
+	margin-left: 1.25rem;
+
+	list-style-type: disc;
+}
+ol {
+	 margin-left: 1.25rem; 
+}
+
+
+/*
+ *  Cursor Selection
+ */
+::-moz-selection {
+    color: white;
+    background: var(--text-selection-color);
+}
+
+::selection {
+    color: white;
+    background: var(--text-selection-color);
+}

@@ -1,0 +1,58 @@
+.socialFeeds-instagram{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 19px;
+	position: relative;
+
+}
+	.socialFeeds-instagram:hover > .socialFeeds-instagram-caption{
+		opacity: 1;
+	}
+
+	.socialFeeds-instagram img{
+		margin-bottom: 20px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.socialFeeds-instagram-caption{
+		transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+
+		position: absolute;
+		top: 0;
+		padding: 20px;
+		height: 100%;
+		opacity: 0;
+
+		background-color: rgba(254, 54, 0, 0.9);
+
+		& p{
+			margin: 0;
+
+			color: black;
+		}
+	}
+
+.socialFeeds-twitter{
+	height: 446px;
+	overflow: auto;
+}
+.socialFeeds-twitter-item{
+	padding: 10px 0;
+
+	background-color: var(--gray-lightest);
+
+	&:nth-child(even){
+		background-color: white;
+	}
+}
+	.socialFeeds-twitter-item-date{
+		display: block;
+		color: var(--gray);
+	}
+	.socialFeeds-twitter-item-text{
+		font-weight: var(--font-weight-bold);
+	}

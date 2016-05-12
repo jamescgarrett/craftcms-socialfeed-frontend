@@ -1,0 +1,24 @@
+.siteContainer{
+	position: relative;
+
+    max-width: var(--screen-max);
+
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.siteContainer-content{
+	position: relative;
+	overflow: hidden;
+
+	width: 100%;
+    /*min-height: 100%;*/
+   /* padding-bottom: -var(--footer-height);*/
+
+    /*&:after {
+    	content: "";
+    	display: block;
+    	height: var(--footer-height);
+    }*/
+}

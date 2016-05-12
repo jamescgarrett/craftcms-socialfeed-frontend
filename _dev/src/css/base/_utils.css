@@ -1,0 +1,250 @@
+/*
+ *  Text Alignement
+ */
+.u-textLeft {
+  text-align: left; 
+}
+
+.u-textRight {
+  text-align: right; 
+}
+
+.u-textCenter {
+  text-align: center; 
+}
+
+.u-textJustify {
+  text-align: justify; 
+}
+
+.u-textNoWrap{
+	white-space: nowrap;
+}
+
+
+/*
+ *  Visibility
+ */
+.u-showSM{
+	display: none !important;
+	@media (--screen-sm-min) {
+		display: block !important;
+	}
+}
+.u-showMD{
+	display: none !important;
+	@media (--screen-md-min) {
+		display: block !important;
+	}
+}
+.u-hideSM{
+    @media (--screen-sm-min) {
+        display: none !important;
+    }
+}
+.u-hideMD{
+	@media (--screen-md-min) {
+		display: none !important;
+	}
+}
+.u-hideLG{
+	@media (--screen-lg-min) {
+		display: none !important;
+	}
+}
+.u-hideMax{
+	@media (--screen-max) {
+		display: none !important;
+	}
+}
+.u-hidden{
+    display: none !important;
+}
+.u-show{
+	display: block !important;
+}
+.u-invisible{
+    opacity: 0;
+}
+.u-visible{
+    opacity: 1;
+}
+
+/*
+ *  Lists
+ */
+.u-unstyledList{
+	list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ *  Position
+ */
+.u-positionRel{
+	position: relative;
+}
+
+/*
+ *  Flex
+ */
+.u-flexbox{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-flex: 0;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+	.u-flexbox--wrap{
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.u-flexbox--middle{
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+					
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.u-flexbox--center{
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 auto;
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+/*
+ *  Paddings
+ */
+.u-defaultPadding{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.u-halfPadding{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+/*
+ *  Colored Block Text
+ */
+ .u-blockText{
+ 	display: inline-block;
+	padding: 8px 18px;
+ }
+	.u-blockText--yellow{
+		background-color: var(--brand-yellow);
+
+		color: black;
+	}
+	.u-blockText--cyan{
+		background-color: var(--brand-cyan);
+
+		color: black;
+	}
+	.u-blockText--red{
+		background-color: var(--brand-red);
+
+		color: black;
+	}
+	.u-blockText--black{
+		background-color: black;
+
+		color: white;
+	}
+	.u-blockText--gray{
+		background-color: var(--gray-light);
+
+		color: black;
+	}
+
+/*
+ *  Colors
+ */
+ .u-colorCyan{
+ 	color: var(--brand-cyan);
+ }
+
+/*
+ *  Backgrounds
+ */
+.u-grayBackground{
+	background-color: var(--gray-lightest);
+}
+
+/*
+ *  Text
+ */
+.u-capitalize{
+    text-transform: uppercase;
+}
+.u-small{
+	font-size: var(--fs12;);
+}
+
+/*
+ *  Overlay
+ */
+.u-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.u-overlay--active{
+    display: block;
+}
+/*
+ *  Screen Readers Only
+ */
+.u-srOnly{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+/*
+ *  Browser Upgrade
+ */
+.browserUpgrade {
+    margin: 0.2em 0;
+    background: red;
+    color: black;
+    padding: 0.2em 0;
+}

@@ -1,0 +1,21 @@
+.form--search{
+    display: none;
+	overflow: hidden;
+	vertical-align: top;
+
+    &.form--search--active{
+        display: inline-block;
+    }
+}
+
+.input--search{
+	padding: 5px 15px;
+
+	background-color: var(--gray-lightest);
+
+	font-size: var(--fs13);
+
+	&:focus{
+		background-color: var(--gray-lightest);
+	}
+}

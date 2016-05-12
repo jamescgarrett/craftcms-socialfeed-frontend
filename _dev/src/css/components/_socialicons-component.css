@@ -1,0 +1,17 @@
+.socialIcons{
+	margin-top: 35px;
+
+	font-size: var(--fs21);
+}
+	.socialIcons-icon{
+		display: inline;
+		margin-right: 10px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		& a:hover{
+			color: var(--brand-red);
+		}
+	}

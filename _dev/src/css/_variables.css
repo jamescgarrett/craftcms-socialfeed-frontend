@@ -1,0 +1,128 @@
+:root {
+    --brand-red:    rgb(254, 54, 0);
+    --brand-cyan:  rgb(0, 228, 255);
+    --brand-yellow:     rgb(225, 242, 0);
+
+    --gray-darker:      #2d2d2d;
+    --gray-dark:        #383431;
+    --gray:             #666666;
+    --gray-light:       #EAEAEA;
+    --gray-lighter:     #F2F2F2;
+    --gray-lightest:    #FAFAFA;
+
+    --error-color:      red;
+    --success-color:    green;
+
+    --body-bg:          white;
+
+    --text-selection-color:          var(--brand-cyan);
+    --text-color-base:               black;
+    --link-color-base:               var(--brand-red);
+    --link-hover-color-base:         black;
+    --link-decoration-base:          none;
+    --link-hover-decoration-base:    none;
+
+    --font-family-base:   'source-code-pro', 'Courier New', Courier, Helvetica, sans-serif;
+    --font-family-secondary: var(--font-family-base);
+    --font-weight-base:   400;
+    --font-weight-bold:   700;
+    --line-height-base:   1.5;
+    --letter-spacing-default: 0;
+
+    --paragraph-line-height:     1.6;
+    --paragraph-margin-bottom:   1rem;
+    --paragraph-margin-top:      0.5rem;
+
+    --headings-font-family:       var(--font-family-base);
+    --headings-font-weight:       var(--font-weight-bold);
+    --headings-line-height:       1;
+    --headings-default-letter-spacing: 0;
+    --headings-margin-bottom:     0;
+
+    --fs10: 0.625rem;
+    --fs11: 0.6875rem;
+    --fs12: 0.75rem;
+    --fs13: 0.8125rem;
+    --fs14: 0.875rem;
+    --fs15: 0.9375rem;
+    --fs16: 1rem;
+    --fs17: 1.0625rem;
+    --fs18: 1.125rem;
+    --fs19: 1.188rem;
+    --fs20: 1.25rem;
+    --fs21: 1.313rem;
+    --fs22: 1.375rem;
+    --fs23: 1.438rem;
+    --fs24: 1.5rem;
+    --fs26: 1.625rem;
+    --fs28: 1.75rem;
+    --fs30: 1.875rem;
+    --fs32: 2rem;
+    --fs34: 2.125rem;
+    --fs36: 2.25rem;
+    --fs38: 2.375rem;
+    --fs40: 2.5rem;
+    --fs45: 2.813rem;
+    --fs55: 3.438rem;
+    --fs57: 3.563rem;
+    --fs76: 4.75rem;
+
+    --btn-default-color:         white;
+    --btn-default-color-hover:   white;
+    --btn-secondary-color:         white;
+
+    --btn-default-letter-spacing: 0;
+    --btn-default-case:           lowercase;
+    --btn-default-font-family:    var(--font-family-base);
+    --btn-default-font-weight:    700;
+
+    --btn-default-bg:            black;
+    --btn-default-bg-hover:      var(--brand-red);
+    --btn-secondary-bg:          rgb(204, 204, 204);
+
+    --btn-default-border:      0;
+    --btn-default-border-hover: 0;
+    --btn-default-border-radius: 5px;
+
+    --btn-padding-height:      12px;
+    --btn-padding-width:       25px;
+    --btn-height-base:         auto;
+
+    --input-color:               #383431;
+
+    --input-bg:                  white;
+    --input-bg-focus:            white;
+
+    --input-border:              1px solid var(--gray-lighter);
+    --input-border-focus:        1px solid var(--brand-cyan);
+
+    --input-color-placeholder:   var(--gray);
+
+    --input-padding-height:      10px;
+    --input-padding-width:       20px;
+    --input-height-base:         auto;
+
+    --table-border:              1px solid var(--gray-lighter);
+
+    --table-bg:                  white;
+    --table-bg-even:             var(--gray-lightest);
+
+    --table-head-foot-padding:   5px 20px;
+    --table-padding:             10px 20px;
+
+    --grid-margin: 0.6rem;
+    --screen-xs-min-grid: 31.750rem;
+    --screen-sm-min-grid: 47rem;
+    --screen-md-min-grid: 63rem;
+    --screen-lg-min-grid: 99.000rem;
+
+    --screen-max:    112.500em;
+
+    --footer-height: 240px;
+
+    @custom-media --screen-xs-min (min-width: 33.750em);
+    @custom-media --screen-sm-min (min-width: 48em);
+    @custom-media --screen-md-min (min-width: 64em);
+    @custom-media --screen-lg-min (min-width: 100.000em);
+    @custom-media --screen-max (min-width: 112.500em);
+}

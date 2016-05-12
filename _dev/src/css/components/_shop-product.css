@@ -1,0 +1,41 @@
+.product-form{
+	padding: 20px;
+}
+
+.product-link{
+    display: block;
+
+    background-color: var(--brand-red);
+    
+    & img{
+        transition: opacity 0.3s ease;
+
+        display: block;
+    }
+
+    &:hover{
+        & img {
+            opacity: 0.6;
+        }
+    }
+}
+
+.product-info{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.product-price{
+    margin-top: 3px;
+
+    font-size: var(--fs14);
+    color: var(--gray);
+}
+
+.product-description{
+	margin-bottom: 20px;
+
+	& p{
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,150 @@
+ /**
+ * (optional) define here the style definitions which should be applied on the slider container
+ * e.g. width including further controls like arrows etc.
+ */
+.slider {
+    position: relative;
+}
+
+
+.slider-frame {
+    /**
+     * (optional) wrapper width, specifies width of the slider frame.
+     */
+    width: 100%;
+
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider-slides {
+    display: inline-block;
+}
+    .slides-action{
+        position: absolute;
+        top: 50%;
+        margin-top: -48px;
+        opacity: 0.1;
+
+        font-size: 6rem;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+        .slides-action--prev{
+            left: 20px;
+        }
+        .slides-action--next{
+            right: 20px;
+        }
+
+
+    .slider-bullets{
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+        .slider-bullets-bullet{
+            display: inline-block;
+            vertical-align: middle;
+
+            font-size: var(--fs13);
+            color: white;
+            cursor: pointer;
+        }
+            .slider-bullets-bullet--active{
+                color: var(--brand-red);
+            }
+
+.slider-bullets--thumbs{
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+}
+    .slider-bullets-item--thumb{
+        transition: opacity 0.4s ease;
+
+        width: 25%;
+        display: block;
+        margin: 0 10px 0 0;
+        background-color: var(--brand-red);
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &.slider-bullets-bullet--active{
+            & img {
+                opacity: 0.4;
+            }
+        }
+    }
+
+.slider-slide {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    & > span{
+        height: 50vh;
+    }
+}
+    .slider-slide-info{
+        display: block;
+        max-width: 45vw;
+        margin-left: 10%;
+
+        white-space: normal;
+
+    }
+        .slider-slide-text{
+            display: inline;
+            padding: 5px 10px;
+            -webkit-box-decoration-break: clone;
+            -ms-box-decoration-break: clone;
+            -o-box-decoration-break: clone;
+            box-decoration-break: clone;
+     
+            background-color: var(--brand-cyan);
+
+            font-size: var(--fs40);
+            text-transform: lowercase;
+            line-height: 1.4;
+            color: white;           
+        }
+
+        .slider-slide-link{
+            margin-top: 25px;
+
+            font-size: var(--fs21);
+
+            & i {
+                margin-left: 15px;
+            }
+        }
+
+
+.slider--index{
+    & .slider-frame{
+        width: 100vw;
+    }
+
+    & .slider-slide{
+        height: 50vh;
+        width: 100vw;
+    }
+}
